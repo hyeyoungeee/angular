@@ -11,6 +11,7 @@ export class TodosComponent implements OnInit {
 
   newText = "";
   todos:Todo[];
+  today : Date = new Date();
 
   constructor() {
     this.todos = [

@@ -5,7 +5,8 @@ import { Todo } from '../../share/todo.model';
 @Component({
   selector: 'app-todo',
   template: `
-   <input type = "checkbox" [checked] = "todo.done">{{todo.text}}
+   <input type = "checkbox" [checked] = "todo.done"><label>{{todo.text}}</label>
+  
   `,
   styles: [`
     :host {

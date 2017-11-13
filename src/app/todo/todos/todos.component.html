@@ -1,6 +1,6 @@
 <div class = "title">
   <h1>나의 하루</h1>
-  <h2>11/2</h2>
+  <h2>{{today | date:'M월 d일'}}</h2>
 </div>
 <div *ngFor = "let todo of todos" (click) = "todoTogle(todo)">
     <app-todo [todo] = "todo"></app-todo>
@@ -8,3 +8,4 @@
 <div>
   <app-add-todo (onTodoAdded)="addTodo($event)"></app-add-todo>
 </div>
+{{ todos | json }}
